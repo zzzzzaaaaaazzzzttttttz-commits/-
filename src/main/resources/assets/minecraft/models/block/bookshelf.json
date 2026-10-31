@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "gemghoul:block/gem_shelf_top",
+    "side": "minecraft:block/bookshelf"
+  }
+}

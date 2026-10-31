@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    " F ",
+    "DOD",
+    "OOO"
+  ],
+  "result": {
+    "id": "gemghoul:gem_altar",
+    "count": 1
+  }
+}
