@@ -1,0 +1,16 @@
+طريقة الحصول على ملف الـ jar (بدون ما تثبّت شي على جهازك):
+
+1) سوّي حساب بموقع github.com ثم New repository (اسمه أي شي، خليه Private) وأنشئه.
+2) داخل الريبو اضغط "uploading an existing file" وفك ضغط هذا الـ zip وسحب كل محتوياته
+   (مو المجلد نفسه، المحتويات) إلى الصفحة، بما فيها المجلد المخفي .github
+   ثم Commit changes.
+   - إذا المجلد .github ما انرفع: اضغط Add file > Create new file، واكتب بالاسم:
+     .github/workflows/build.yml  والصق محتوى الملف الموجود بالـ zip، ثم Commit.
+3) افتح تبويب Actions. راح تلاقي عملية Build تشتغل (دقيقتين إلى خمسة).
+   إذا ما اشتغلت: Actions > Build > Run workflow.
+4) لما تخلص بعلامة خضراء اضغط عليها، وبآخر الصفحة بقسم Artifacts نزّل gemghoul-mod.
+   داخله الملف gemghoul-1.0.0.jar
+5) ضعه بمجلد mods لنسخة monkeys:
+   C:\Users\abood\AppData\Roaming\.minecraft\versions\monkeys\mods
+
+إذا طلعت علامة حمراء: افتح العملية، اضغط على خطوة Build with Gradle، وانسخ لي الأسطر الحمراء.
