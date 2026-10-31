@@ -89,7 +89,7 @@ public class GemAltarMenu extends AbstractContainerMenu {
             data.set(3 + i, -1);
             data.set(6 + i, 0);
         }
-        ItemStack tool = toolSlot.getItem();
+        ItemStack tool = toolSlot.getItem(0);
         if (tool.isEmpty() || tool.is(Items.BOOK) || tool.getItem().getEnchantmentValue(tool) <= 0 || tool.getMaxStackSize() != 1) return;
         ItemEnchantments existing = tool.getOrDefault(DataComponents.ENCHANTMENTS, ItemEnchantments.EMPTY);
         if (existing.size() >= MAX_GEMS) return;
@@ -150,7 +150,7 @@ public class GemAltarMenu extends AbstractContainerMenu {
     @Override
     public boolean clickMenuButton(Player player, int id) {
         if (id < 0 || id >= 3) return false;
-        ItemStack tool = toolSlot.getItem();
+        ItemStack tool = toolSlot.getItem(0);
         int cost = data.get(id), gemIndex = data.get(3 + id), gemLevel = data.get(6 + id);
         if (tool.isEmpty() || cost <= 0 || gemIndex < 0) return false;
         boolean creative = player.getAbilities().instabuild;
